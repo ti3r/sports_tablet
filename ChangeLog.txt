@@ -1,0 +1,4 @@
+07/12/2011	Alexandro Blanco <ti3r.bubblenet@gmail.com>
+Initial Development committed to the repository
+ChangeLog.txt file added to keep track of the changes.
+Full development on main branch can start.
