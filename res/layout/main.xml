@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<org.blanco.sportstablet.views.DrawingSurface  
+    android:layout_height="fill_parent">
+    
+    <LinearLayout android:layout_width="match_parent" 
+    	android:id="@+id/main_act_action_bar" 
+    	android:layout_height="wrap_content"
+    	android:background="#123456" >
+    <Button android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" android:id="@+id/action_bar_btn_clear" android:text="@string/str_clear"/>
+    </LinearLayout>
+    
+    <org.blanco.sportstablet.views.DrawingSurface  
     android:layout_width="fill_parent" 
     android:layout_height="fill_parent" 
-    />
-</LinearLayout>
+    android:layout_below="@id/main_act_action_bar"
+    android:id="@+id/main_act_draw_surface"/>
+
+</RelativeLayout>

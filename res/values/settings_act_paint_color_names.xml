@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_act_paint_color_names">
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Great Color</item>
+    </string-array>
+</resources>

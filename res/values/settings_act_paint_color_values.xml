@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_act_paint_color_values">
+        <item>#FF0000FF</item>
+        <item>#FFFF0000</item>
+        <item>#FF123456</item>
+    </string-array>
+</resources>

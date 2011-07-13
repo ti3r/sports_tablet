@@ -1,11 +1,15 @@
 package org.blanco.sportstablet.views;
 
+import org.blanco.sportstablet.SettingsActivity;
+
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.preference.PreferenceManager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -18,7 +22,12 @@ public class DrawingSurface extends View {
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
         mPaint.setARGB(255, 255, 255, 255);
-        mPaint.setColor(Color.BLUE);
+        
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(context);
+        String paintColor = 
+        pref.getString(SettingsActivity.PAINT_COLOR_PREF_NAME, "White"); //White as default
+        
+        mPaint.setColor(Color.parseColor(paintColor));
         mFadePaint = new Paint();
         mFadePaint.setDither(true);
         mFadePaint.setARGB(FADE_ALPHA, 0, 0, 0);

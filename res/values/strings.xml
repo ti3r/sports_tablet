@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
     <string name="app_name">Android Sports Tablet</string>
+    <string name="settings_act_pref_cat_colors">Colors</string>
+    <string name="settings_act_pref_cat_colors_summary">The colors to be used on the draws</string>
+    <string name="settings_act_pref_paint_colors_dialog_title">Paint Colors</string>
+    <string name="settings_act_pref_paint_color_dialog_message">Select a Color to Paint</string>
+    <string name="settings_act_pref_paint_colors_pref_title">Paint Color</string>
+    <string name="settings_act_pref_paint_colors_pref_summary">Select a Color to Paint With</string>
+    <string name="str_clear">Clear</string>
 </resources>

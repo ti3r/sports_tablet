@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:summary="@string/settings_act_pref_cat_colors_summary" android:key="settings_act_pref_cat_colors" android:title="@string/settings_act_pref_cat_colors">
+        <ListPreference android:entries="@array/settings_act_paint_color_names" android:entryValues="@array/settings_act_paint_color_values" android:dialogTitle="@string/settings_act_pref_paint_colors_dialog_title" android:summary="@string/settings_act_pref_paint_colors_pref_summary" android:title="@string/settings_act_pref_paint_colors_pref_title" android:key="settings_act_pref_paint_color"></ListPreference>
+    </PreferenceCategory>
+    
+</PreferenceScreen>
