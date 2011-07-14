@@ -8,4 +8,7 @@
     <string name="settings_act_pref_paint_colors_pref_title">Paint Color</string>
     <string name="settings_act_pref_paint_colors_pref_summary">Select a Color to Paint With</string>
     <string name="str_clear">Clear</string>
+    <string name="str_settings">Settings</string>
+    <string name="settings_act_pref_paint_width_pref_title">Paint Width</string>
+    <string name="settings_act_pref_paint_width_pref_summary">The Width of the line that will be drawn on the surface</string>
 </resources>

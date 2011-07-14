@@ -5,4 +5,9 @@
         <item>#FFFF0000</item>
         <item>#FF123456</item>
     </string-array>
+    <string-array name="settings_act_paint_with_values">
+    	<item>5</item>
+    	<item>10</item>
+    	<item>20</item>
+    </string-array>
 </resources>

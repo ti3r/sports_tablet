@@ -1,3 +1,12 @@
+07/14/2011	Alexandro Blanco <ti3r.bubblenet@gmail.com>
+More development in progress. Drawing surface now has
+transparent background giving the change to the activity
+to set up the appropriate back image.
+soccer_field image added to the project.
+settings to establish the paint with and color were set
+(paint color still has a little bug)
+No release stage has been reached yet
+---------------------------------------------------------
 07/12/2011	Alexandro Blanco <ti3r.bubblenet@gmail.com>
 Initial Development committed to the repository
 ChangeLog.txt file added to keep track of the changes.
