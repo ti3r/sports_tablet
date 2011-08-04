@@ -7,6 +7,8 @@ public class SettingsActivity extends PreferenceActivity {
 	
 	public static final String PAINT_COLOR_PREF_NAME = "settings_act_pref_paint_color";
 	public static final String PAINT_WIDTH_PREF_NAME = "settings_act_pref_paint_width";
+	
+	public static final String FIELD_TYPE_PREF_NAME = "settings_act_pref_field";
 	/**
 	 * @see android.app.Activity#onCreate(Bundle)
 	 */

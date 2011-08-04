@@ -10,4 +10,8 @@
         <item>Normal</item>
         <item>Tick</item>
     </string-array>
+    <string-array name="settings_act_field_names">
+        <item>Soccer</item>
+        <item>Volleyball</item>
+    </string-array>
 </resources>

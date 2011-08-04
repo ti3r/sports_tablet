@@ -3,9 +3,12 @@ package org.blanco.sportstablet;
 import org.blanco.sportstablet.views.DrawingSurface;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Menu;
@@ -42,10 +45,22 @@ public class MainActivity extends Activity implements
 		if (surface == null)
 			Toast.makeText(this, "surface not found", 500).show();
 		else{
-			surface.setBackgroundDrawable(getResources().getDrawable(R.drawable.soccer_field));
+			surface.setBackgroundDrawable(retrieveBackgroundField(this));
 		}
 	}
     
+	public Drawable retrieveBackgroundField(Context context){
+		String backName = PreferenceManager.getDefaultSharedPreferences(this)
+			.getString(SettingsActivity.FIELD_TYPE_PREF_NAME,"uno");
+		int identifier = 
+			getResources().getIdentifier("volleyball_court", "drawable", "org.blanco.sportstablet");
+		Drawable result = null;
+		if (identifier > 0){
+			result = getResources().getDrawable(identifier);
+		}
+		return result;
+	}
+	
     /***
      * The implementation of the ClickListeners that are set to this object.
      * Select the action to performed based on the Id of the pressed View.
